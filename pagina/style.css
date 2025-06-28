@@ -33,9 +33,9 @@ main {
     place-items: center;
 }
 
-main>aside {
-    
-    border: 2px solid;
+a>aside {
+
+    border: 2px solid black;
     border-radius: 20px;
     margin: auto;
     margin-bottom: 44px;
@@ -45,11 +45,41 @@ main>aside {
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.589);
 }
 
-main>aside:hover {
+div>aside {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 44px;
+    height: 80px;
+    width: 290px;
+    background-color: #c0ba61;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.589)
+}
+
+a>aside:hover {
     background-color: #f7f3c2;
     width: 320px;
     transition: 0.4s;
     color: rgba(0, 0, 0, 0.219);
+    border: 0px;
+    outline: 0px;
+    box-decoration-break: none;
+    box-shadow: none;
+
+}
+
+div>aside:hover {
+    background-color: #f7f3c2;
+    width: 320px;
+    transition: 0.4s;
+    color: rgba(0, 0, 0, 0.219);
+
+}
+
+main>a {
+    text-decoration: none;
+    color: #000000;
+
 }
 
 article>p {
@@ -66,6 +96,13 @@ div>p {
 
 div {
     display: flex;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
 }
 
 div#img1 {
@@ -89,7 +126,7 @@ div#img1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.ifood{
+.ifood {
     display: flex;
     margin-left: 10px;
     margin-top: 20px;
@@ -97,8 +134,9 @@ div#img1 {
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.ifoodtext{
-        display: flex;
+
+.ifoodtext {
+    display: flex;
     height: 80px;
     margin-left: 40px;
     margin-top: -20px;
